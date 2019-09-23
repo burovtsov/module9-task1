@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appenders>
+        <File name="Exceptions" fileName="logs/exceptions.log">
+            <PatternLayout pattern="%d{ISO8601} %-p- %m%n"/>
+        </File>
+    </appenders>
+    <loggers>
+        <root level="info">
+            <appender-ref ref="Exceptions" />
+        </root>
+    </loggers>
+</configuration>
+

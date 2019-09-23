@@ -47,12 +47,12 @@ public class Reader {
 
     private void sizeToString() {
         if (summary < 1024)
-            System.out.format("Папка " + path + " занимает %f.2%n" + summary + " Байт");
+            System.out.format("Папка " + path + " занимает %.2f Байт %n", summary);
         else if (summary < 1024 * 1024)
-            System.out.format("Папка " + path + " занимает %f.2%n" + summary/1024 + " Кбайт");
+            System.out.format("Папка " + path + " занимает %.2f Кбайт %n", summary/1024);
         else if (summary < 1024 * 1024 * 1024)
-            System.out.format("Папка " + path + " занимает %f.2%n" + summary/1024/1024 + " Mб");
+            System.out.format("Папка " + path + " занимает %.2f Мб %n", summary/1024/1024);
         else if (summary < 1024 * 1024 * 1024 * 1024)
-            System.out.format("Папка " + path + " занимает %f.2%n" + summary/1024/1024/1024 + " Гб");
+            System.out.format("Папка " + path + " занимает %.2f Гб %n", summary/1024/1024/1024);
     }
 }
